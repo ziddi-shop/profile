@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #00ff00;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: hackerText 1s infinite alternate;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background: #000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+    margin: 30px 0;
+    animation: fadeIn 2s ease;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #00ff00;
+}
+
+.profile-card h2 {
+    font-size: 2em;
+    color: #00ff00;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 1.2em;
+    border: 2px solid #00ff00;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #00ff00;
+    color: #000;
+}
+
+/* About & Experience Section Styles */
+.section {
+    margin-top: 30px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease;
+}
+
+.section h3 {
+    font-size: 2em;
+    color: #00ff00;
+}
+
+.section p {
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+/* Button Styles for Changing Effects */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Animation for Hacker Effect */
+@keyframes hackerText {
+    0% {
+        color: #00ff00;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #00ff00;
+    }
+}
+
+/* Fade-in Animation for Sections */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Blinking Lights Animation */
+@keyframes blinkLight {
+    0% {
+        background-color: #000;
+    }
+    50% {
+        background-color: #00ff00;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .profile-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-card h2 {
+        font-size: 1.5em;
+    }
+
+    .section h3 {
+        font-size: 1.5em;
+    }
+
+    .controls button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
